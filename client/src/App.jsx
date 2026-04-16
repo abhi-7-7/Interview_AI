@@ -11,8 +11,8 @@ import InterviewHistory from './pages/InterviewHistory'
 import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 
-export const ServerUrl  = "http://localhost:8000"
-
+/* eslint-disable react-refresh/only-export-components */
+export const ServerUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
 function App() {
 
   const dispatch = useDispatch()
