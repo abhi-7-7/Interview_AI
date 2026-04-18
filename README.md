@@ -74,6 +74,7 @@ npm run dev
 ```env
 VITE_FIREBASE_APIKEY=your_firebase_api_key
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+VITE_BACKEND_URL=https://your-backend-domain.com
 ```
 
 ### Server
@@ -85,6 +86,13 @@ JWT_SECRET=your_jwt_secret
 OPENROUTER_API_KEY=your_openrouter_api_key
 RAZORPAY_KEY_ID=your_razorpay_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_secret
+FRONTEND_URL=https://your-frontend-domain.com
+```
+
+For multiple frontend deployments, set `FRONTEND_URL` as a comma-separated list:
+
+```env
+FRONTEND_URL=https://your-frontend-domain.com,https://www.your-frontend-domain.com
 ```
 
 ## Main User Flow
